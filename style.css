@@ -1,79 +1,63 @@
-/* styles.css */
+/* style.css */
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f7f6;
-  color: #333;
+  background-color: #1e1e2f; /* dark blueish background */
+  color: #cfd8dc; /* light gray text */
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-  max-width: 900px;
-  margin: 30px auto 15px auto;
+  background-color: #3949ab; /* purple-ish */
+  color: white;
+  padding: 20px 30px;
   text-align: center;
-  border-bottom: 3px solid #4CAF50;
-  padding-bottom: 15px;
-}
-
-header h1 {
-  margin-bottom: 5px;
-  font-size: 2.8em;
-  color: #2e7d32;
-}
-
-header p {
-  font-size: 1.2em;
-  color: #555;
-  margin-top: 0;
 }
 
 nav {
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  padding: 25px 30px;
-}
-
-nav h2 {
-  color: #388e3c;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #4CAF50;
-  padding-bottom: 8px;
+  background-color: #283593; /* darker blue */
+  padding: 20px 30px;
 }
 
 nav ul {
-  list-style-type: none;
-  padding-left: 0;
-  columns: 2;
-  column-gap: 40px;
-}
-
-nav ul li {
-  margin-bottom: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul li a {
+  color: #90caf9; /* light blue */
   text-decoration: none;
-  color: #2e7d32;
   font-weight: 600;
-  transition: color 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a:focus {
-  color: #81c784;
-  text-decoration: underline;
+  background-color: #5c6bc0;
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 15px;
 }
 
 footer {
-  max-width: 900px;
-  margin: 0 auto 30px auto;
-  padding: 15px 0;
+  background-color: #3949ab;
+  color: white;
   text-align: center;
-  font-size: 0.9em;
-  color: #777;
-  border-top: 1px solid #ddd;
+  padding: 15px 30px;
 }
